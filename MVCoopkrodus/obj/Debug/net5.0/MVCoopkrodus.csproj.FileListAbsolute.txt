@@ -23,7 +23,6 @@ C:\Users\opilane\Desktop\MVCoopkrodus\MVCoopkrodus\obj\Debug\net5.0\MVCoopkrodus
 C:\Users\opilane\Desktop\MVCoopkrodus\MVCoopkrodus\obj\Debug\net5.0\MVCoopkrodus.RazorCoreGenerate.cache
 C:\Users\opilane\Desktop\MVCoopkrodus\MVCoopkrodus\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\opilane\Desktop\MVCoopkrodus\MVCoopkrodus\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\opilane\Desktop\MVCoopkrodus\MVCoopkrodus\obj\Debug\net5.0\Razor\Views\OOP\Index.cshtml.g.cs
 C:\Users\opilane\Desktop\MVCoopkrodus\MVCoopkrodus\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\opilane\Desktop\MVCoopkrodus\MVCoopkrodus\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\opilane\Desktop\MVCoopkrodus\MVCoopkrodus\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
