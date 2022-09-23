@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dtC2VZf1j//Lt4vV4lIG3NKsELdf1GYV+TWsiLnXO7VfvX/dg9Fbw61Ar0gW/uasYsUEuwY3+chmrgLdFHddqQ==",
+  "dgSpecHash": "1hWcblAp3tT6SxwgIXRpo0OJZCyQtqWpHeS8zU5VO/RA5XCol4mVQZHo76xCNxpagk7rlsNyj0c3Kio/TpafLQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\opilane\\Desktop\\MVCoopkrodus\\MVCoopkrodus\\MVCoopkrodus.csproj",
+  "projectFilePath": "C:\\Users\\opilane\\Desktop\\MVCoopharjutus\\MVCoopkrodus\\MVCoopkrodus.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\opilane\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
