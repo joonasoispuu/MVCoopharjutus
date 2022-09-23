@@ -20,8 +20,17 @@ namespace MVCoopkrodus.Controllers
         }
 
         // GET: GDPs
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
+            var GDP = from m in _context.GDP
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                GDP = GDP.Where(s => s.Country.Contains(searchString));
+            }
+
+
             return View(await _context.GDP.ToListAsync());
         }
 
