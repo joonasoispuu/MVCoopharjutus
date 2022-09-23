@@ -20,18 +20,31 @@ namespace MVCoopkrodus.Controllers
         }
 
         // GET: GDPs
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index(string CountryRegion, string searchString)
         {
+            IQueryable<string> genreQuery = from m in _context.GDP
+                                            orderby m.Region
+                                            select m.Region;
             var GDP = from m in _context.GDP
                          select m;
 
-            if (!String.IsNullOrEmpty(searchString))
+            if (!string.IsNullOrEmpty(searchString))
             {
                 GDP = GDP.Where(s => s.Country.Contains(searchString));
             }
 
+            if (!string.IsNullOrEmpty(CountryRegion))
+            {
+                GDP = GDP.Where(x => x.Region == CountryRegion);
+            }
 
-            return View(await _context.GDP.ToListAsync());
+            var CountryRegionVM = new CountryGDP
+            {
+                Region = new SelectList(await genreQuery.Distinct().ToListAsync()),
+                Countries = await GDP.ToListAsync()
+            };
+             
+            return View(CountryRegionVM);
         }
 
         // GET: GDPs/Details/5
