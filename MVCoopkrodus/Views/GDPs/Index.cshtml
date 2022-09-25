@@ -1,4 +1,4 @@
-﻿@model IEnumerable<MVCoopkrodus.Models.GDP>
+﻿@model MVCoopkrodus.Models.CountryGDPViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -11,7 +11,11 @@
 </p>
 <form asp-controller="GDPs" asp-action="Index" method="get">
     <p>
-        Country: <input type="text" name="searchString" />
+        <select asp-for="CountryRegion" asp-items="Model.Regions">
+            <option value="">All</option>
+        </select>
+
+        Country: <input type="text" asp-for="SearchString" />
         <input type="submit" value="Filter" />
     </p>
 </form>
@@ -19,22 +23,22 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Country)
+                @Html.DisplayNameFor(model => model.Countries[0].Country)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Region)
+                @Html.DisplayNameFor(model => model.Countries[0].Region)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.EstimatebyDollar)
+                @Html.DisplayNameFor(model => model.Countries[0].EstimatebyDollar)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Population)
+                @Html.DisplayNameFor(model => model.Countries[0].Population)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.Countries) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Country)

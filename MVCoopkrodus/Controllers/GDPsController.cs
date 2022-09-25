@@ -25,23 +25,24 @@ namespace MVCoopkrodus.Controllers
             IQueryable<string> genreQuery = from m in _context.GDP
                                             orderby m.Region
                                             select m.Region;
-            var GDP = from m in _context.GDP
+
+            var countries = from m in _context.GDP
                          select m;
 
             if (!string.IsNullOrEmpty(searchString))
             {
-                GDP = GDP.Where(s => s.Country.Contains(searchString));
+                countries = countries.Where(s => s.Country.Contains(searchString));
             }
 
             if (!string.IsNullOrEmpty(CountryRegion))
             {
-                GDP = GDP.Where(x => x.Region == CountryRegion);
+                countries = countries.Where(x => x.Region == CountryRegion);
             }
 
-            var CountryRegionVM = new CountryGDP
+            var CountryRegionVM = new CountryGDPViewModel
             {
-                Region = new SelectList(await genreQuery.Distinct().ToListAsync()),
-                Countries = await GDP.ToListAsync()
+                Regions = new SelectList(await genreQuery.Distinct().ToListAsync()),
+                Countries = await countries.ToListAsync()
             };
              
             return View(CountryRegionVM);

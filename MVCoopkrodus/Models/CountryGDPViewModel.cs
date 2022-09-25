@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace MVCoopkrodus.Models
 {
-    public class CountryGDP
+    public class CountryGDPViewModel
     {
-        public List<CountryGDP> Countries { get; set; }
-        public SelectList Region { get; set; }
+        public List<GDP> Countries { get; set; }
+        public SelectList Regions { get; set; }
         public string CountryRegion { get; set; }
         public string SearchString { get; set; }
     }
