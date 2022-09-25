@@ -15,7 +15,8 @@ namespace MVCoopkrodus.Migrations
                     Country = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Region = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     EstimatebyDollar = table.Column<int>(type: "int", nullable: true),
-                    Population = table.Column<int>(type: "int", nullable: true)
+                    Population = table.Column<int>(type: "int", nullable: true),
+                    Year = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

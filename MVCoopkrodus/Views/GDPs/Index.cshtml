@@ -34,6 +34,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Countries[0].Population)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Countries[0].Year)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -52,6 +55,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Population)
             </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |

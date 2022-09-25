@@ -25,32 +25,36 @@ namespace MVCoopkrodus.Models
                     {
                         Country = "Estonia",
                         Region = "Europe",
-                        EstimatebyDollar = 35924,
-                        Population = 1331000
+                        EstimatebyDollar = 27971,
+                        Population = 1331000,
+                        Year = "2022"
                     },
 
                     new GDP
                     {
                         Country = "Morocco",
                         Region = "Africa",
-                        EstimatebyDollar = 3000,
-                        Population = 36510000
+                        EstimatebyDollar = 3497,
+                        Population = 36510000,
+                        Year = "2021"
                     },
 
                     new GDP
                     {
                         Country = "Austria",
                         Region = "Europe",
-                        EstimatebyDollar = 48105,
-                        Population = 8059000
+                        EstimatebyDollar = 53268,
+                        Population = 8059000,
+                        Year = "2021"
                     },
 
                     new GDP
                     {
-                        Country = "switzerland ",
+                        Country = "Switzerland ",
                         Region = "Europe",
                         EstimatebyDollar = 86410,
-                        Population = 8137000
+                        Population = 86850,
+                        Year = "2020"
                     }
                 );
                 context.SaveChanges();

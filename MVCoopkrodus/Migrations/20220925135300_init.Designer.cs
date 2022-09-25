@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVCoopkrodus.Migrations
 {
     [DbContext(typeof(MVCoopkrodusContext))]
-    [Migration("20220921082821_init")]
+    [Migration("20220925135300_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -38,6 +38,9 @@ namespace MVCoopkrodus.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Region")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Year")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

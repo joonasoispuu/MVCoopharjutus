@@ -7,5 +7,6 @@
         public string Region { get; set; }
         public int? EstimatebyDollar { get; set; }
         public int? Population { get; set; }
+        public string Year { get; set; }
     }
 }
