@@ -26,8 +26,8 @@ namespace MVCoopkrodus.Models
 
 
         [Display(Name ="Year calculated")]
+        [Range(1, 2050)]
         [Required]
-        [StringLength(4, MinimumLength = 4)]
-        public string Year { get; set; }
+        public int Year { get; set; }
     }
 }

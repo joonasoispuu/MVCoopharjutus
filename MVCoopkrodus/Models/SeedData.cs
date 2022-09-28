@@ -27,7 +27,7 @@ namespace MVCoopkrodus.Models
                         Region = "Europe",
                         EstimatebyDollar = 27971,
                         Population = 1331000,
-                        Year = "2022"
+                        Year = 2022
                     },
 
                     new GDP
@@ -36,7 +36,7 @@ namespace MVCoopkrodus.Models
                         Region = "Africa",
                         EstimatebyDollar = 3497,
                         Population = 36510000,
-                        Year = "2021"
+                        Year = 2021
                     },
 
                     new GDP
@@ -45,7 +45,7 @@ namespace MVCoopkrodus.Models
                         Region = "Europe",
                         EstimatebyDollar = 53268,
                         Population = 8059000,
-                        Year = "2021"
+                        Year = 2021
                     },
 
                     new GDP
@@ -54,7 +54,7 @@ namespace MVCoopkrodus.Models
                         Region = "Europe",
                         EstimatebyDollar = 86410,
                         Population = 86850,
-                        Year = "2020"
+                        Year = 2020
                     }
                 );
                 context.SaveChanges();
